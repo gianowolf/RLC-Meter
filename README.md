@@ -42,3 +42,7 @@ En el informe, realizar un resumen de los procedimientos de diseno de la PCB y a
 - "Circuitos Electricos, Sexta Edicion" Dorf, Svoboda.
 - "GLOSARIO: Conceptos Generales Sobre Circuitos Impresos" Brengi D., 2018.
 - "La Suite Proteus: Primeros Pasos con la Pestana Diseno", Labcenter Electronics, 2019.
+- "LMx93-N, LM2903-N, Low-Power, Low-Offset Voltage, Dual Comparators" Texas Instruments, 2018.
+- "LM2903, LM393/LM393A, LM293A Dual Differential Comparator" Fairchild Semiconductor, 2012.
+
+
