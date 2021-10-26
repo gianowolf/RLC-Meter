@@ -9,7 +9,7 @@
 
 ![picture 1](images/d0ed19d1db9a25e089cb112fb4b94e8c0b94b7319ae4296a3ad26d3bff68deef.png)  
 
-## Parte I: Firmware, Simulacion y Depuracion
+## Parte I: Firmware, Simulacion y Depuracionf
 
 - Desarrollar el firmware del MCU para implementar la medicion de capacidad e inductancia como se muestra en la figura
 - Los componentes a medir se encuentran en circuitos RC y RLC, con C y L como incognitas. Investigar un metodo de medida
@@ -44,5 +44,3 @@ En el informe, realizar un resumen de los procedimientos de diseno de la PCB y a
 - "La Suite Proteus: Primeros Pasos con la Pestana Diseno", Labcenter Electronics, 2019.
 - "LMx93-N, LM2903-N, Low-Power, Low-Offset Voltage, Dual Comparators" Texas Instruments, 2018.
 - "LM2903, LM393/LM393A, LM293A Dual Differential Comparator" Fairchild Semiconductor, 2012.
-
-
