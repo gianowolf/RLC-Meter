@@ -44,3 +44,4 @@ En el informe, realizar un resumen de los procedimientos de diseno de la PCB y a
 - "La Suite Proteus: Primeros Pasos con la Pestana Diseno", Labcenter Electronics, 2019.
 - "LMx93-N, LM2903-N, Low-Power, Low-Offset Voltage, Dual Comparators" Texas Instruments, 2018.
 - "LM2903, LM393/LM393A, LM293A Dual Differential Comparator" Fairchild Semiconductor, 2012.
+- "Mastering STM32, A step-y-step guide to the most complete ARM Cortex-M platform, using a free and powerfull development environment based on Eclipse and GCC" Noviello C., 2016.   

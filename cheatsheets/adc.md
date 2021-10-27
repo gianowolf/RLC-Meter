@@ -44,6 +44,7 @@ In single mode, we store the imput channel in the SQ1 bits of ADCx_SQR3, and lea
 ![picture 2](../images/6f651d6649f31ebf028138ddfe207e38da4d4c95f6f0b3753cf329d2388875fc.png)  
 
 ADC Samples the input volgage in a capacitor. You can configure the sample time for each channel using SMPR1 and 2.
+
 ## ADC Status Register: ADCx_SR
 
 ### EOC
