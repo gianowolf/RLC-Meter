@@ -9,7 +9,7 @@
 
 ![picture 1](images/d0ed19d1db9a25e089cb112fb4b94e8c0b94b7319ae4296a3ad26d3bff68deef.png)  
 
-## Parte I: Firmware, Simulacion y Depuracionf
+## Parte I: Firmware, Simulacion y Depuracion
 
 - Desarrollar el firmware del MCU para implementar la medicion de capacidad e inductancia como se muestra en la figura
 - Los componentes a medir se encuentran en circuitos RC y RLC, con C y L como incognitas. Investigar un metodo de medida
