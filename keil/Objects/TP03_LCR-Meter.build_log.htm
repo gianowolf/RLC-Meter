@@ -22,43 +22,12 @@ Dialog DLL:      TCM.DLL V1.53.0.0
  
 <h2>Project:</h2>
 C:\Users\gianf\Desktop\TPI_TP03\keil\TP03_LCR-Meter.uvprojx
-Project File Date:  10/28/2021
+Project File Date:  10/29/2021
 
 <h2>Output:</h2>
 *** Using Compiler 'V6.16', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
 Rebuild target 'Target 1'
-../bin/main.c(1): warning: In file included from...
-../bin/main.h(5): warning: In file included from...
-../bin/flags.h(7): warning: no previous extern declaration for non-static variable 'Flag_LRC' [-Wmissing-variable-declarations]
-uint8_t Flag_LRC;
-        ^
-../bin/flags.h(7): note: declare 'static' if the variable is not intended to be used outside of this translation unit
-uint8_t Flag_LRC;
-^
-../bin/flags.h(8): warning: no previous extern declaration for non-static variable 'Flag_RC' [-Wmissing-variable-declarations]
-uint8_t Flag_RC;
-        ^
-../bin/flags.h(8): note: declare 'static' if the variable is not intended to be used outside of this translation unit
-uint8_t Flag_RC;
-^
-../bin/flags.h(9): warning: no previous extern declaration for non-static variable 'Flag_write' [-Wmissing-variable-declarations]
-uint8_t Flag_write;
-        ^
-../bin/flags.h(9): note: declare 'static' if the variable is not intended to be used outside of this translation unit
-uint8_t Flag_write;
-^
-3 warnings generated.
-compiling main.c...
 compiling data_manager.c...
-../bin/seos.c(12): warning: no previous prototype for function 'SysTick_Handler' [-Wmissing-prototypes]
-void SysTick_Handler(void) {
-     ^
-../bin/seos.c(12): note: declare 'static' if the function is not intended to be used outside of this translation unit
-void SysTick_Handler(void) {
-^
-static 
-1 warning generated.
-compiling seos.c...
 ../bin/lrc_meter.c(4): warning: no previous extern declaration for non-static variable 'result' [-Wmissing-variable-declarations]
 volatile uint32_t result;
                   ^
@@ -67,14 +36,6 @@ volatile uint32_t result;
          ^
 1 warning generated.
 compiling lrc_meter.c...
-../bin/rc_meter.c(3): warning: no previous extern declaration for non-static variable 'adc_result' [-Wmissing-variable-declarations]
-volatile uint32_t adc_result;
-                  ^
-../bin/rc_meter.c(3): note: declare 'static' if the variable is not intended to be used outside of this translation unit
-volatile uint32_t adc_result;
-         ^
-1 warning generated.
-compiling rc_meter.c...
 ../bin/lcd.c(15): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
         LCDPORT->ODR &= ~(1<<LCD_D0 | 1<<LCD_D1 | 1<<LCD_D2 | 1<<LCD_D3 | 1<<LCD_D4 | 1<<LCD_D5 | 1<<LCD_D6 | 1<<LCD_D7 | 1<<LCD_RW | 1<<LCD_RS | 1<<LCD_E);
                      ~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -104,6 +65,45 @@ compiling rc_meter.c...
                      ~~ ^~~~~~~~~~~~
 9 warnings generated.
 compiling lcd.c...
+../bin/main.c(1): warning: In file included from...
+../bin/main.h(5): warning: In file included from...
+../bin/flags.h(7): warning: no previous extern declaration for non-static variable 'Flag_LRC' [-Wmissing-variable-declarations]
+uint8_t Flag_LRC;
+        ^
+../bin/flags.h(7): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint8_t Flag_LRC;
+^
+../bin/flags.h(8): warning: no previous extern declaration for non-static variable 'Flag_RC' [-Wmissing-variable-declarations]
+uint8_t Flag_RC;
+        ^
+../bin/flags.h(8): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint8_t Flag_RC;
+^
+../bin/flags.h(9): warning: no previous extern declaration for non-static variable 'Flag_write' [-Wmissing-variable-declarations]
+uint8_t Flag_write;
+        ^
+../bin/flags.h(9): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint8_t Flag_write;
+^
+3 warnings generated.
+compiling main.c...
+../bin/rc_meter.c(3): warning: no previous extern declaration for non-static variable 'adc_result' [-Wmissing-variable-declarations]
+volatile uint32_t adc_result;
+                  ^
+../bin/rc_meter.c(3): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+volatile uint32_t adc_result;
+         ^
+1 warning generated.
+compiling rc_meter.c...
+../bin/seos.c(12): warning: no previous prototype for function 'SysTick_Handler' [-Wmissing-prototypes]
+void SysTick_Handler(void) {
+     ^
+../bin/seos.c(12): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void SysTick_Handler(void) {
+^
+static 
+1 warning generated.
+compiling seos.c...
 compiling timer.c...
 compiling retarget_io.c...
 assembling startup_stm32f10x_ld.s...
@@ -162,10 +162,10 @@ Package Vendor: Keil
       Source file:   Source\retarget_io.c
 
    * Component: Keil::Device:Startup:1.0.0
-      Source file:   Device\Source\ARM\STM32F1xx_OPT.s
       Source file:   Device\Source\ARM\startup_stm32f10x_ld.s
-      Source file:   Device\Source\system_stm32f10x.c
       Include file:  RTE_Driver\Config\RTE_Device.h
+      Source file:   Device\Source\ARM\STM32F1xx_OPT.s
+      Source file:   Device\Source\system_stm32f10x.c
 Build Time Elapsed:  00:00:01
 </pre>
 </body>

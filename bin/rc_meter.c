@@ -10,19 +10,15 @@ void ADC1_2_IRQHandler(void)
     adc_result =  ADC1->DR;
 }
 
-void RC_Init(int continuously, int interruptions)                   
-{
-		adc_result = 0;
+void RC_Init(int interruptions)                   
+{		adc_result = 0;
     RCC->APB2ENR |= (1<<APB2ENR_ADC1);  /* habilita el clock para adc1 */
     GPIOA->CRL = 0x44444304;            /* PA1(adc1):INPUT - PA2:OUTPUT 50 MHz */
     
-    ADC1->CR2 = (1<<ADON);              /* power-up: el cambio de 0 a 1 enciende el modulo */
+    ADC1->CR2 |= (1<<ADON);              /* power-up: el cambio de 0 a 1 enciende el modulo */
     ADC1->SMPR2 = 7<<3;                 /* 239.5 ADC clock cycles en SMP1 (cada SMP usa 3 bits del registro SMPR) */
-    ADC1->SQR3 = 1;                     /* elige el canal 1 como la entrada */
 
-    if(continuously){                    /* continuously: 1 para la conversion continua */
-        ADC1->CR2 |= 1<<CONT;           /* CONT = 1 */
-    }
+
     if(interruptions){                   /* mode: 0 para polling, 1 para uso de interrupciones */            
         enableInterrupts();
     } 
@@ -31,7 +27,6 @@ void RC_Init(int continuously, int interruptions)
 void enableInterrupts(void)
 {
     ADC1->CR1 = (1<<EOCIE);             /* EOCIE = 1 (interrupcion al finalizar la conversion habilitada) */
-    NVIC_EnableIRQ(ADC1_2_IRQn);
 }
 
 void disableInterrupts(void)
@@ -39,9 +34,15 @@ void disableInterrupts(void)
     ADC1->CR1 = (0<<EOCIE);             /* EOCIE = 0 (interrupcion al finalizar la conversion desabilitada) */
 }
 
-void RC_StartConvertion(void)
+void RC_StartConvertion(int continuously)
 {
-    ADC1->CR2 = 1<<ADON;
+		ADC1->SQR3 = 1;                     /* elige el canal 1 como la entrada */
+		if(continuously)
+		{
+				ADC1->CR2 |= 1<<CONT;
+		}
+    ADC1->CR2 |= 1<<ADON;
+		NVIC_EnableIRQ(ADC1_2_IRQn);
 }
 
 uint32_t RC_GetCapacitance(void)

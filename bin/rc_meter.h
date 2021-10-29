@@ -13,8 +13,8 @@
 void ADC1_2_IRQHandler(void);
 
 /* Public Functions */
-void     RC_Init(int countinuously, int interrputions);
-void     RC_StartConvertion(void);
+void     RC_Init(int interrputions);
+void     RC_StartConvertion(int countinuously);
 uint32_t RC_GetCapacitance(void);
 
 /* Private Functions */

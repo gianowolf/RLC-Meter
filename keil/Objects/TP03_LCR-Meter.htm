@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\TP03_LCR-Meter.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\TP03_LCR-Meter.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6160001: Last Updated: Fri Oct 29 09:19:03 2021
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6160001: Last Updated: Fri Oct 29 10:06:49 2021
 <BR><P>
 <H3>Maximum Stack Usage =        144 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -431,7 +431,7 @@ Global Symbols
 <LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DATAMANAGER_Write
 </UL>
 
-<P><STRONG><a name="[88]"></a>strcmp</STRONG> (Thumb, 128 bytes, Stack size 0 bytes, strcmpv7m.o(.text))
+<P><STRONG><a name="[89]"></a>strcmp</STRONG> (Thumb, 128 bytes, Stack size 0 bytes, strcmpv7m.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_open
 </UL>
 
@@ -793,8 +793,8 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_ld.o(RESET)
 </UL>
-<P><STRONG><a name="[81]"></a>DATAMANAGER_Init</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, data_manager.o(.text.DATAMANAGER_Init))
-<BR><BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEOS_Boot
+<P><STRONG><a name="[82]"></a>DATAMANAGER_Init</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, data_manager.o(.text.DATAMANAGER_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEOS_Boot
 </UL>
 
 <P><STRONG><a name="[72]"></a>DATAMANAGER_LRCread</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, data_manager.o(.text.DATAMANAGER_LRCread))
@@ -802,7 +802,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LRC_GetInductance
 </UL>
-<BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEOS_Dispatch
+<BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEOS_Dispatch
 </UL>
 
 <P><STRONG><a name="[74]"></a>DATAMANAGER_RCread</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, data_manager.o(.text.DATAMANAGER_RCread))
@@ -810,16 +810,16 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RC_GetCapacitance
 </UL>
-<BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEOS_Dispatch
+<BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEOS_Dispatch
 </UL>
 
-<P><STRONG><a name="[76]"></a>DATAMANAGER_Start</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, data_manager.o(.text.DATAMANAGER_Start))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = DATAMANAGER_Start
+<P><STRONG><a name="[76]"></a>DATAMANAGER_Start</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, data_manager.o(.text.DATAMANAGER_Start))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = DATAMANAGER_Start &rArr; RC_StartConvertion
 </UL>
 <BR>[Calls]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RC_StartConvertion
 <LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LRC_StartConvertion
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEOS_Boot
+<BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEOS_Boot
 </UL>
 
 <P><STRONG><a name="[79]"></a>DATAMANAGER_Write</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, data_manager.o(.text.DATAMANAGER_Write))
@@ -827,12 +827,12 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEOS_Dispatch
+<BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEOS_Dispatch
 </UL>
 
 <P><STRONG><a name="[8d]"></a>ITM_SendChar</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, retarget_io.o(.text.ITM_SendChar))
-<BR><BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stdout_putchar
-<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stderr_putchar
+<BR><BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stdout_putchar
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stderr_putchar
 </UL>
 
 <P><STRONG><a name="[7a]"></a>LCD_Init</STRONG> (Thumb, 104 bytes, Stack size 8 bytes, lcd.o(.text.LCD_Init))
@@ -840,7 +840,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_sendCommand
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEOS_Boot
+<BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEOS_Boot
 </UL>
 
 <P><STRONG><a name="[7b]"></a>LCD_sendCommand</STRONG> (Thumb, 54 bytes, Stack size 0 bytes, lcd.o(.text.LCD_sendCommand))
@@ -851,8 +851,8 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DATAMANAGER_LRCread
 </UL>
 
-<P><STRONG><a name="[80]"></a>LRC_Init</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, lrc_meter.o(.text.LRC_Init))
-<BR><BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEOS_Boot
+<P><STRONG><a name="[81]"></a>LRC_Init</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, lrc_meter.o(.text.LRC_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEOS_Boot
 </UL>
 
 <P><STRONG><a name="[77]"></a>LRC_StartConvertion</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, lrc_meter.o(.text.LRC_StartConvertion))
@@ -863,32 +863,36 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DATAMANAGER_RCread
 </UL>
 
-<P><STRONG><a name="[7c]"></a>RC_Init</STRONG> (Thumb, 98 bytes, Stack size 8 bytes, rc_meter.o(.text.RC_Init))
-<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = RC_Init &rArr; enableInterrupts
+<P><STRONG><a name="[7c]"></a>RC_Init</STRONG> (Thumb, 80 bytes, Stack size 8 bytes, rc_meter.o(.text.RC_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = RC_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;enableInterrupts
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEOS_Boot
+<BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEOS_Boot
 </UL>
 
-<P><STRONG><a name="[78]"></a>RC_StartConvertion</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, rc_meter.o(.text.RC_StartConvertion))
-<BR><BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DATAMANAGER_Start
+<P><STRONG><a name="[78]"></a>RC_StartConvertion</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, rc_meter.o(.text.RC_StartConvertion))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = RC_StartConvertion
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_EnableIRQ
+</UL>
+<BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DATAMANAGER_Start
 </UL>
 
-<P><STRONG><a name="[7e]"></a>SEOS_Boot</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, seos.o(.text.SEOS_Boot))
+<P><STRONG><a name="[7f]"></a>SEOS_Boot</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, seos.o(.text.SEOS_Boot))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = SEOS_Boot &rArr; seos_init &rArr; SysTick_Config
 </UL>
-<BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;seos_init
+<BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;seos_init
 <LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RC_Init
-<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LRC_Init
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LRC_Init
 <LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Init
 <LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DATAMANAGER_Start
-<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DATAMANAGER_Init
+<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DATAMANAGER_Init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[82]"></a>SEOS_Dispatch</STRONG> (Thumb, 66 bytes, Stack size 8 bytes, seos.o(.text.SEOS_Dispatch))
+<P><STRONG><a name="[83]"></a>SEOS_Dispatch</STRONG> (Thumb, 66 bytes, Stack size 8 bytes, seos.o(.text.SEOS_Dispatch))
 <BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = SEOS_Dispatch &rArr; DATAMANAGER_Write &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DATAMANAGER_Write
@@ -898,7 +902,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[87]"></a>SEOS_Schedule</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, seos.o(.text.SEOS_Schedule))
+<P><STRONG><a name="[88]"></a>SEOS_Schedule</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, seos.o(.text.SEOS_Schedule))
 <BR><BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
 </UL>
 
@@ -909,14 +913,14 @@ Global Symbols
 <P><STRONG><a name="[9]"></a>SysTick_Handler</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, seos.o(.text.SysTick_Handler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SysTick_Handler
 </UL>
-<BR>[Calls]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEOS_Schedule
+<BR>[Calls]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEOS_Schedule
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_ld.o(RESET)
 </UL>
 <P><STRONG><a name="[30]"></a>SystemInit</STRONG> (Thumb, 86 bytes, Stack size 8 bytes, system_stm32f10x.o(.text.SystemInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = SystemInit &rArr; SetSysClock &rArr; SetSysClockTo72
 </UL>
-<BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetSysClock
+<BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetSysClock
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_ld.o(.text)
 </UL>
@@ -937,7 +941,7 @@ Global Symbols
 <P><STRONG><a name="[5e]"></a>_sys_open</STRONG> (Thumb, 76 bytes, Stack size 8 bytes, retarget_io.o(.text._sys_open))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = _sys_open
 </UL>
-<BR>[Calls]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcmp
+<BR>[Calls]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcmp
 </UL>
 <BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;freopen
 </UL>
@@ -949,36 +953,32 @@ Global Symbols
 <P><STRONG><a name="[6d]"></a>_sys_write</STRONG> (Thumb, 66 bytes, Stack size 16 bytes, retarget_io.o(.text._sys_write))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = _sys_write &rArr; stdout_putchar
 </UL>
-<BR>[Calls]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stdout_putchar
-<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stderr_putchar
+<BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stdout_putchar
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stderr_putchar
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_writebuf
 </UL>
 
-<P><STRONG><a name="[7d]"></a>enableInterrupts</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, rc_meter.o(.text.enableInterrupts))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = enableInterrupts
-</UL>
-<BR>[Calls]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_EnableIRQ
-</UL>
-<BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RC_Init
+<P><STRONG><a name="[7d]"></a>enableInterrupts</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, rc_meter.o(.text.enableInterrupts))
+<BR><BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RC_Init
 </UL>
 
 <P><STRONG><a name="[44]"></a>main</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, main.o(.text.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = main &rArr; SEOS_Dispatch &rArr; DATAMANAGER_Write &rArr; __2printf &rArr; _printf_char_file &rArr; _printf_char_common &rArr; __printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEOS_Sleep
-<LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEOS_Dispatch
-<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEOS_Boot
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEOS_Dispatch
+<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEOS_Boot
 </UL>
 <BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
 </UL>
 
-<P><STRONG><a name="[7f]"></a>seos_init</STRONG> (Thumb, 76 bytes, Stack size 8 bytes, seos.o(.text.seos_init))
+<P><STRONG><a name="[80]"></a>seos_init</STRONG> (Thumb, 76 bytes, Stack size 8 bytes, seos.o(.text.seos_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = seos_init &rArr; SysTick_Config
 </UL>
-<BR>[Calls]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Config
+<BR>[Calls]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Config
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEOS_Boot
+<BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SEOS_Boot
 </UL>
 
 <P><STRONG><a name="[32]"></a>fputc</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, fputc.o(i.fputc))
@@ -991,23 +991,23 @@ Global Symbols
 <H3>
 Local Symbols
 </H3>
-<P><STRONG><a name="[85]"></a>SysTick_Config</STRONG> (Thumb, 36 bytes, Stack size 16 bytes, seos.o(.text.SysTick_Config))
+<P><STRONG><a name="[7e]"></a>__NVIC_EnableIRQ</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, rc_meter.o(.text.__NVIC_EnableIRQ))
+<BR><BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RC_StartConvertion
+</UL>
+
+<P><STRONG><a name="[86]"></a>SysTick_Config</STRONG> (Thumb, 36 bytes, Stack size 16 bytes, seos.o(.text.SysTick_Config))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = SysTick_Config
 </UL>
-<BR>[Calls]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_SetPriority
+<BR>[Calls]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__NVIC_SetPriority
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;seos_init
-</UL>
-
-<P><STRONG><a name="[86]"></a>__NVIC_SetPriority</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, seos.o(.text.__NVIC_SetPriority))
-<BR><BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Config
+<BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;seos_init
 </UL>
 
-<P><STRONG><a name="[8b]"></a>__NVIC_EnableIRQ</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, rc_meter.o(.text.__NVIC_EnableIRQ))
-<BR><BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;enableInterrupts
+<P><STRONG><a name="[87]"></a>__NVIC_SetPriority</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, seos.o(.text.__NVIC_SetPriority))
+<BR><BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Config
 </UL>
 
-<P><STRONG><a name="[8a]"></a>stderr_putchar</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, retarget_io.o(.text.stderr_putchar))
+<P><STRONG><a name="[8b]"></a>stderr_putchar</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, retarget_io.o(.text.stderr_putchar))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = stderr_putchar
 </UL>
 <BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ITM_SendChar
@@ -1015,7 +1015,7 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_write
 </UL>
 
-<P><STRONG><a name="[89]"></a>stdout_putchar</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, retarget_io.o(.text.stdout_putchar))
+<P><STRONG><a name="[8a]"></a>stdout_putchar</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, retarget_io.o(.text.stdout_putchar))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = stdout_putchar
 </UL>
 <BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ITM_SendChar
@@ -1023,18 +1023,18 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_write
 </UL>
 
-<P><STRONG><a name="[83]"></a>SetSysClock</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, system_stm32f10x.o(.text.SetSysClock))
+<P><STRONG><a name="[84]"></a>SetSysClock</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, system_stm32f10x.o(.text.SetSysClock))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = SetSysClock &rArr; SetSysClockTo72
 </UL>
-<BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetSysClockTo72
+<BR>[Calls]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetSysClockTo72
 </UL>
 <BR>[Called By]<UL><LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
 </UL>
 
-<P><STRONG><a name="[84]"></a>SetSysClockTo72</STRONG> (Thumb, 190 bytes, Stack size 8 bytes, system_stm32f10x.o(.text.SetSysClockTo72))
+<P><STRONG><a name="[85]"></a>SetSysClockTo72</STRONG> (Thumb, 190 bytes, Stack size 8 bytes, system_stm32f10x.o(.text.SetSysClockTo72))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SetSysClockTo72
 </UL>
-<BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetSysClock
+<BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetSysClock
 </UL>
 
 <P><STRONG><a name="[33]"></a>_printf_input_char</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, _printf_char_common.o(.text))

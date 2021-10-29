@@ -33,7 +33,7 @@ int seos_init(void)
 
 int SEOS_Boot(void)
 {
-	RC_Init(1,1); /* Inicializa el modulo RC con interrupciones activadas y modo continuo */
+	RC_Init(1); /* Inicializa el modulo RC con interrupciones activadas y modo continuo */
 
 	seos_init();
 

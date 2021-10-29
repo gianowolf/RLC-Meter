@@ -16,7 +16,7 @@ void DATAMANAGER_Init(void)
 void DATAMANAGER_Start(void)
 {
 	LRC_StartConvertion();
-	RC_StartConvertion();
+	RC_StartConvertion(1);
 }
 
 void DATAMANAGER_RCread(void)

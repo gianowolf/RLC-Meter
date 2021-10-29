@@ -384,26 +384,6 @@
           <GroupName>Source Group 1</GroupName>
           <Files>
             <File>
-              <FileName>main.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\bin\main.h</FilePath>
-            </File>
-            <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\bin\main.c</FilePath>
-            </File>
-            <File>
-              <FileName>seos.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\bin\seos.h</FilePath>
-            </File>
-            <File>
-              <FileName>seos.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\bin\seos.c</FilePath>
-            </File>
-            <File>
               <FileName>data_manager.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\bin\data_manager.c</FilePath>
@@ -414,29 +394,9 @@
               <FilePath>..\bin\data_manager.h</FilePath>
             </File>
             <File>
-              <FileName>rc_meter.h</FileName>
+              <FileName>flags.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\bin\rc_meter.h</FilePath>
-            </File>
-            <File>
-              <FileName>rc_meter.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\bin\rc_meter.c</FilePath>
-            </File>
-            <File>
-              <FileName>lrc_meter.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\bin\lrc_meter.h</FilePath>
-            </File>
-            <File>
-              <FileName>lrc_meter.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\bin\lrc_meter.c</FilePath>
-            </File>
-            <File>
-              <FileName>lcd.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\bin\lcd.h</FilePath>
+              <FilePath>..\bin\flags.h</FilePath>
             </File>
             <File>
               <FileName>lcd.c</FileName>
@@ -444,9 +404,49 @@
               <FilePath>..\bin\lcd.c</FilePath>
             </File>
             <File>
-              <FileName>flags.h</FileName>
+              <FileName>lcd.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\bin\flags.h</FilePath>
+              <FilePath>..\bin\lcd.h</FilePath>
+            </File>
+            <File>
+              <FileName>lrc_meter.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\bin\lrc_meter.c</FilePath>
+            </File>
+            <File>
+              <FileName>lrc_meter.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\bin\lrc_meter.h</FilePath>
+            </File>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\bin\main.c</FilePath>
+            </File>
+            <File>
+              <FileName>main.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\bin\main.h</FilePath>
+            </File>
+            <File>
+              <FileName>rc_meter.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\bin\rc_meter.c</FilePath>
+            </File>
+            <File>
+              <FileName>rc_meter.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\bin\rc_meter.h</FilePath>
+            </File>
+            <File>
+              <FileName>seos.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\bin\seos.c</FilePath>
+            </File>
+            <File>
+              <FileName>seos.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\bin\seos.h</FilePath>
             </File>
             <File>
               <FileName>timer.c</FileName>
@@ -508,7 +508,7 @@
       </component>
     </components>
     <files>
-      <file attr="config" category="header" name="RTE_Driver\Config\RTE_Device.h" version="1.1.2">
+      <file attr="config" category="header" name="RTE_Driver\Config\RTE_Device.h" version="0.0.0">
         <instance index="0">RTE\Device\STM32F103C6\RTE_Device.h</instance>
         <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="1.0.0" condition="STM32F1xx CMSIS"/>
         <package name="STM32F1xx_DFP" schemaVersion="1.4.0" url="http://www.keil.com/pack/" vendor="Keil" version="2.3.0"/>
@@ -516,7 +516,7 @@
           <targetInfo name="Target 1"/>
         </targetInfos>
       </file>
-      <file attr="config" category="source" condition="STM32F1xx LD ARMCC" name="Device\Source\ARM\startup_stm32f10x_ld.s" version="1.0.0">
+      <file attr="config" category="source" condition="STM32F1xx LD ARMCC" name="Device\Source\ARM\startup_stm32f10x_ld.s" version="0.0.0">
         <instance index="0">RTE\Device\STM32F103C6\startup_stm32f10x_ld.s</instance>
         <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="1.0.0" condition="STM32F1xx CMSIS"/>
         <package name="STM32F1xx_DFP" schemaVersion="1.4.0" url="http://www.keil.com/pack/" vendor="Keil" version="2.3.0"/>
@@ -524,7 +524,7 @@
           <targetInfo name="Target 1"/>
         </targetInfos>
       </file>
-      <file attr="config" category="source" name="Device\Source\system_stm32f10x.c" version="1.0.0">
+      <file attr="config" category="source" name="Device\Source\system_stm32f10x.c" version="0.0.0">
         <instance index="0">RTE\Device\STM32F103C6\system_stm32f10x.c</instance>
         <component Cclass="Device" Cgroup="Startup" Cvendor="Keil" Cversion="1.0.0" condition="STM32F1xx CMSIS"/>
         <package name="STM32F1xx_DFP" schemaVersion="1.4.0" url="http://www.keil.com/pack/" vendor="Keil" version="2.3.0"/>
