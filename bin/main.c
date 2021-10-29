@@ -1,7 +1,7 @@
 #include "main.h"
 
 int main(void)
-   {
+{
 	SEOS_Boot(); 	
 	while(1)
 	{

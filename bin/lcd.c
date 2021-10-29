@@ -6,7 +6,7 @@
 
 void delay_us(uint16_t);
 
-void LCD_init(void) {
+void LCD_Init(void) {
 	// esperar 15ms luego de encendar para inicializar el lcd
 	delay_us(15000);
 	// activa el clock del puerto del lcd

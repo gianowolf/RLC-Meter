@@ -1,11 +1,8 @@
 #ifndef _LCD_H
 #define _LCD_H
 
-#include <stm32f103x6.h>                 // Device header
-
+#include "stm32f10x.h"               
 #include <stdint.h>
-
-#include "lcd.h"
 
 #define LCDPORT GPIOB //puerto al que se conecta el lcd
 #define LCDIOCLK RCC_APB2ENR_IOPBEN
@@ -22,7 +19,7 @@
 #define LCD_RS	7 //pin conectado a LCD RS
 #define LCD_E	5	//pin conectado a LCD E
 
-void LCD_init(void);
+void LCD_Init(void);
 void LCD_sendCommand(uint8_t);
 void LCD_goToXY(uint8_t, uint8_t);
 void LCD_sendChar(uint8_t);

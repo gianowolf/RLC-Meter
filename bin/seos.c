@@ -1,33 +1,31 @@
 #include "seos.h"
-#include "sensor.h"
-#include "data_manager.h"
-#include "lcd.h"
-
-/* PUBLIC FLAGS */
-volatile uint16_t Flag_read;
-volatile uint16_t Flag_write;
 
 /* PRIVATE */
 int seos_init(void);
 
-static uint16_t counter_read;
+extern uint8_t Flag_RC;
+extern uint8_t Flag_LRC;
+extern uint8_t Flag_write;
+
 static uint16_t counter_write;
 
 void SysTick_Handler(void) {
 	SEOS_Schedule();
 }
 
+
 int seos_init(void)
 {
-	Flag_read  = 0;
+	Flag_RC  = 0;
+	Flag_LRC = 0;
 	Flag_write = 0;
+	
 	//se inicializan los flags y contadores
 	counter_write = OOPH_WRITE;
-	counter_read  = OOPH_READ;
 
-	//se configura el sistem tick para interrupir una vez cada 100 ms
+	/* se configura el sistem tick para interrupir una vez cada 100 ms */
 	if (SysTick_Config(SystemCoreClock / 10)){
-		//error handling
+		/* error handling */
 	}
 
 	return 0;
@@ -35,44 +33,48 @@ int seos_init(void)
 
 int SEOS_Boot(void)
 {
-	//inicializa todos los módulos
-	LCD_init();
-	SENSOR_Init();
-	DATAMANAGER_Init();
+	RC_Init(1,1); /* Inicializa el modulo RC con interrupciones activadas y modo continuo */
+
 	seos_init();
+
+	LRC_Init();
+
+	LCD_Init();
+		
+	DATAMANAGER_Init();
+	DATAMANAGER_Start();
+	
 	return 0;
 }
 
 int SEOS_Schedule(void)
 {
-	//el planificador levanta el flag de las tareas que se tengan que despachar
-	if(++counter_read == OVERF_READ)
-	{
-		Flag_read   = 1; 
-		counter_read = 0;
-	}
-#ifndef DEBUG
 	if(++counter_write == OVERF_WRITE)
 	{
 		Flag_write    = 1;
 		counter_write = 0; 
 	}
-#endif
 	return 0;
 }
 
 int SEOS_Dispatch(void)
 {
 	//el despachador ejecuta las tareas que estén pendientes y baja los flags
-	if(Flag_read)
+	if(Flag_RC)
 	{
-		DATAMANAGER_Read();
-		Flag_read = 0;
+		DATAMANAGER_RCread();
+		Flag_RC = 0;
+	}
+	
+	if(Flag_LRC)
+	{
+		DATAMANAGER_LRCread();
+		Flag_LRC = 0;
 	}
 	
 	if(Flag_write)
 	{
-	    DATAMANAGER_Write();
+	  DATAMANAGER_Write();
 		Flag_write = 0;
 	}
 	return 0;
