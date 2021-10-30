@@ -1,11 +1,16 @@
 #include "data_manager.h"
 
 static uint32_t lrc, rc;
-	
+
+char msg_capacitance[] = "Capacitance";
+char msg_meter[] = "Meter";
+char msg_value[] = "00.000 uF";
+
 void DATAMANAGER_Start(void);
 void DATAMANAGER_RCread(void);
 void DATAMANAGER_LRCread(void);
 void DATAMANAGER_Write(void);
+
 
 void DATAMANAGER_Init(void)
 {
@@ -31,5 +36,5 @@ void DATAMANAGER_LRCread(void)
 
 void DATAMANAGER_Write(void)
 {
-	printf("\nESCRIBIENDO LOS VALORES");
+	printf("\n%d ",RC_GetCapacitance());
 }

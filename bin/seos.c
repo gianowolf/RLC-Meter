@@ -9,11 +9,6 @@ extern uint8_t Flag_write;
 
 static uint16_t counter_write;
 
-void SysTick_Handler(void) {
-	SEOS_Schedule();
-}
-
-
 int seos_init(void)
 {
 	Flag_RC  = 0;
@@ -33,15 +28,17 @@ int seos_init(void)
 
 int SEOS_Boot(void)
 {
+	/* Setting-up modules */
 	RC_Init(1); /* Inicializa el modulo RC con interrupciones activadas y modo continuo */
+	LRC_Init();
+	LCD_Init();
+	TIMER_Init();
+	DATAMANAGER_Init();
 
+	/* Starting OS functions */
 	seos_init();
 
-	LRC_Init();
-
-	LCD_Init();
-		
-	DATAMANAGER_Init();
+	/* Starting start-up programs */
 	DATAMANAGER_Start();
 	
 	return 0;
