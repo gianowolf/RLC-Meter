@@ -27,7 +27,7 @@ void RC_Init(int interruptions)
 void enableInterrupts(void)
 {
     ADC1->CR1 = (1<<EOCIE);             /* EOCIE = 1 (interrupcion al finalizar la conversion habilitada) */
-}
+ }
 
 void disableInterrupts(void)
 {
