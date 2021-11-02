@@ -74,3 +74,26 @@ void delay_us(uint16_t t) {
 	for(i = 0; i < t; i++)
 		for(l = 0; l < 12; l++){}
 }
+
+void LCD_sendInt(uint32_t i)
+{
+	char str[10];  
+	sprintf(str,"%d",i); 
+}
+
+void LCD_sendStr(char *str)
+{
+	while(*str != 0)
+	{
+		LCD_sendByte(*str);
+		str++;
+	}
+}
+
+void LCD_sendByte(char c)
+{
+	USART->DR = c;
+	
+	while((USART1->SR&(1<<6) == 0); //wait until TC flag is set
+	USART->SR &= ~(1<<6); //clear TC flag
+}
