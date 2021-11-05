@@ -1,0 +1,33 @@
+Dependencies for Project 'prueba_crlrc', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 6160000::V6.16::ARMCLANG
+F (.\main.c)(0x618558FB)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/Device/STM32F103C6-I./RTE/_Target_1-IC:/Users/gianf/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/gianf/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32F10X_LD -D_RTE_-o ./objects/main.o -MD)
+I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\stm32f10x.h)(0x5825D31C)
+I (RTE\_Target_1\RTE_Components.h)(0x618269AA)
+I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\core_cm3.h)(0x60D48392)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6035A280)
+I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\cmsis_version.h)(0x60D48392)
+I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\cmsis_compiler.h)(0x60D48392)
+I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\cmsis_armclang.h)(0x60D48392)
+I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\system_stm32f10x.h)(0x5825D31C)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x6035A284)
+F (.\usart.c)(0x61826AF9)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/Device/STM32F103C6-I./RTE/_Target_1-IC:/Users/gianf/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/gianf/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32F10X_LD -D_RTE_-o ./objects/usart.o -MD)
+F (.\usart.h)(0x61826B06)()
+F (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.3\Source\retarget_io.c)(0x584EC46E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/Device/STM32F103C6-I./RTE/_Target_1-IC:/Users/gianf/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/gianf/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32F10X_LD -D_RTE_-o ./objects/retarget_io.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x6035A280)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6035A280)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x6035A284)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x6035A280)
+I (C:\Keil_v5\ARM\ARMCLANG\include\assert.h)(0x6035A280)
+I (C:\Keil_v5\ARM\ARMCLANG\include\rt_sys.h)(0x6035A284)
+I (RTE\_Target_1\RTE_Components.h)(0x618269AA)
+F (RTE\Device\STM32F103C6\RTE_Device.h)(0x59287A56)()
+F (RTE\Device\STM32F103C6\startup_stm32f10x_ld.s)(0x5825D31C)(--target=arm-arm-none-eabi -mcpu=cortex-m3 -masm=auto -c-gdwarf-3 -Wa,armasm,--pd,"__EVAL SETA 1"-I./RTE/Device/STM32F103C6-I./RTE/_Target_1-IC:/Users/gianf/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/gianf/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 535" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"STM32F10X_LD SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o ./objects/startup_stm32f10x_ld.o)
+F (RTE\Device\STM32F103C6\system_stm32f10x.c)(0x5825D31C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/Device/STM32F103C6-I./RTE/_Target_1-IC:/Users/gianf/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/gianf/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32F10X_LD -D_RTE_-o ./objects/system_stm32f10x.o -MD)
+I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\stm32f10x.h)(0x5825D31C)
+I (RTE\_Target_1\RTE_Components.h)(0x618269AA)
+I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\core_cm3.h)(0x60D48392)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6035A280)
+I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\cmsis_version.h)(0x60D48392)
+I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\cmsis_compiler.h)(0x60D48392)
+I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\cmsis_armclang.h)(0x60D48392)
+I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\system_stm32f10x.h)(0x5825D31C)

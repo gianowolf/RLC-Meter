@@ -54,6 +54,8 @@ uint32_t RC_GetCapacitance(void)
     return adc_result;
 }
 
+
+
 /* * * * * * * * * * * * * * * * * * * * * * * *
 tc
     Time Constant [s]
@@ -67,3 +69,4 @@ voltage
     voltage at tc=63.2% of charging voltage
     ejemplo: (10.000 Ohms) * (100 uF) = 1 s
 
+* * * * * * * * * * * * * * * * * * * * * * * * * */

@@ -272,7 +272,7 @@ int main()
 11. save the current value for next calculation
 12. repeat from step 8
 
-### Example: MEasure the Freq of the wave and reports through usart1 */
+### Example: Measure the Freq of the wave and reports through usart1 */
 
 ```c
 #include <stm32f10x.h>

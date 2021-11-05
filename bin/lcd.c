@@ -75,25 +75,29 @@ void delay_us(uint16_t t) {
 		for(l = 0; l < 12; l++){}
 }
 
-void LCD_sendInt(uint32_t i)
+void LCD_sendByte(unsigned char c)
 {
-	char str[10];  
-	sprintf(str,"%d",i); 
+	USART1->DR = c;
+	while ((USART1->SR&1<<6)==0);
+	USART1->SR &= ~(1<<6); //clear TC flag
 }
 
 void LCD_sendStr(char *str)
 {
 	while(*str != 0)
 	{
-		LCD_sendByte(*str);
+		//LCD_sendByte(*str);
+		LCD_sendChar(*str);
 		str++;
 	}
 }
 
-void LCD_sendByte(char c)
+void LCD_sendInt(unsigned int i)
 {
-	USART->DR = c;
+	char str[10];  
+	sprintf(str,"%d",i); 
 	
-	while((USART1->SR&(1<<6) == 0); //wait until TC flag is set
-	USART->SR &= ~(1<<6); //clear TC flag
+  LCD_sendStr(str);
 }
+
+

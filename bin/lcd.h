@@ -3,6 +3,7 @@
 
 #include "stm32f10x.h"               
 #include <stdint.h>
+#include <stdio.h>
 
 #define LCDPORT GPIOB //puerto al que se conecta el lcd
 #define LCDIOCLK RCC_APB2ENR_IOPBEN
@@ -22,8 +23,17 @@
 void LCD_Init(void);
 void LCD_sendCommand(uint8_t);
 void LCD_goToXY(uint8_t, uint8_t);
-void LCD_sendChar(uint8_t);
 void LCD_sendString(uint8_t*, uint8_t);
 void LCD_clear(void);
+void LCD_sendChar(uint8_t c);
+
+
+void LCD_sendInt(unsigned int i);
+void LCD_sendStr(char *str);
+void LCD_sendByte(unsigned char c);
+
+
+
+
 
 #endif
