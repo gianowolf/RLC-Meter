@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-11-11T11:45:10.030Z" agent="5.0 (Windows)" etag="GZ7BQKHKXOf4DlNRb69-" version="15.7.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-11-11T11:48:44.485Z" agent="5.0 (Windows)" etag="8xgTl4SIwOBAO1qQ7jQy" version="15.7.0" type="github">
   <diagram id="hqGkgfw6MOZt2o8de5VF" name="Page-1">
     <mxGraphModel dx="629" dy="839" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -31,6 +31,11 @@
               <mxPoint x="570" y="460" />
               <mxPoint x="440" y="460" />
             </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="81V3bFYnpVTNeKnOiC7m-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;endArrow=classic;endFill=1;" edge="1" parent="1" source="81V3bFYnpVTNeKnOiC7m-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="420" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="81V3bFYnpVTNeKnOiC7m-5" value="Comparador" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -77,6 +82,20 @@
             <mxPoint x="438" y="502" as="sourcePoint" />
             <mxPoint x="566" y="502" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="81V3bFYnpVTNeKnOiC7m-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=10;endArrow=classic;endFill=1;" edge="1" parent="1" source="81V3bFYnpVTNeKnOiC7m-34">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="150" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="570" y="120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="81V3bFYnpVTNeKnOiC7m-34" value="&lt;div style=&quot;font-size: 10px&quot;&gt;&lt;i&gt;TIM2 Wave Generator&lt;/i&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="120" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="81V3bFYnpVTNeKnOiC7m-35" value="&lt;div style=&quot;font-size: 10px&quot;&gt;&lt;i&gt;TIM2 Edge Detector&lt;br&gt;&lt;/i&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="370" y="430" width="140" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
